@@ -15,3 +15,19 @@
  *= require foundation_and_overrides
 
  */
+
+ .top-bar {
+   background: #FA87EF;
+ }
+
+ .top-bar-section li a:not(.button) {
+   background: #FA87EF !important;
+ }
+
+ .top-bar-section li a:not(.button):hover {
+   background: #FA87EF !important;
+ }
+
+ .panel {
+   background: #B7B7B7;
+ }

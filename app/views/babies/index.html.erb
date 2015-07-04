@@ -1,7 +1,20 @@
-<% @babies.each do |baby| %>
 
-<p>  First name: <%= baby.first_name %> <br/>
-Date of Birth: <%= baby.dob %></p>
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="row">
 
 
-  <% end %>
+            <% @babies.each do |baby| %>
+            <div class="large-3 small-6 columns end">
+              <%= image_tag "mashabear.jpg", size:"150x150" %>
+              <h6 class="panel"><p><strong> First name: </strong><%= baby.first_name %> <br>
+              <strong>Date of Birth:</strong> <%= baby.dob %></p></h6>
+            </div>
+            <% end %>
+
+
+
+
+          </div>
+        </div>
+      </div>
