@@ -18,7 +18,8 @@ ActiveRecord::Schema.define(version: 20150528011215) do
 
   create_table "babies", force: :cascade do |t|
     t.string   "first_name", null: false
-    t.integer  "age",        null: false
+    t.date     "dob",        null: false
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

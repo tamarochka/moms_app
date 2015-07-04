@@ -1,0 +1,18 @@
+<% if @baby.errors.any? %>
+  <% @baby.errors.full_messages.each do |msg| %>
+    <%= msg %></br>
+  <% end %>
+<% end %>
+
+<%= form_for @baby do |f| %>
+<p>
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name %>
+  </p>
+
+  <p>
+      <%= f.label :dob %>
+      <%= f.date_select :dob%>
+    </p>
+  <p><%= f.submit "Add baby", :class=>"button small" %></p>
+  <% end %>
