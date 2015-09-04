@@ -17,17 +17,17 @@
  */
 
  .top-bar {
-   background: #FA87EF;
+   background: #D6799E;
  }
 
  .top-bar-section li a:not(.button) {
-   background: #FA87EF !important;
+   background: #D6799E !important;
  }
 
  .top-bar-section li a:not(.button):hover {
-   background: #FA87EF !important;
+   background: #D6799E !important;
  }
 
  .panel {
-   background: #B7B7B7;
+   background: #fafafa;
  }
