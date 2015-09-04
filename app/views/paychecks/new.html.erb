@@ -1,0 +1,26 @@
+<% if @paycheck.errors.any? %>
+  <% @paycheck.errors.full_messages.each do |msg| %>
+    <%= msg %></br>
+  <% end %>
+<% end %>
+
+<%= form_for @paycheck do |f| %>
+<p>
+    <%= f.label :start_date %>
+    <%= f.date_select :start_date %>
+  </p>
+  <p>
+      <%= f.label :end_date %>
+      <%= f.date_select :end_date %>
+    </p>
+  <p>
+      <%= f.label :hr_base %>
+      <%= f.select :hr_base, options_for_select(10..30), include_blank: true, :id => "hr_base" %>
+    </p>
+    <p>
+        <%= f.label :hr_qty %>
+        <%= f.select :hr_qty, options_for_select(1..60), include_blank: true, :id => "hr_qty" %>
+      </p>
+
+  <p><%= f.submit "Calculate", :class=>"button small" %></p>
+  <% end %>

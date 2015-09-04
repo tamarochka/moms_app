@@ -12,6 +12,14 @@
             </div>
             <% end %>
 
+            Paychecks:
+
+            <% @paychecks.each do |paycheck| %>
+              <h6><p><strong> For the week: </strong><%= paycheck.start_date %>-<%= paycheck.end_date %> <br>
+              <strong>Amount:</strong> $ <%= paycheck.hr_base*paycheck.hr_qty %></p></h6>
+            </div>
+            <% end %>
+
 
 
 
